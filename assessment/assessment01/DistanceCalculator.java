@@ -1,4 +1,4 @@
-package assessment;
+package assessment01;
 
 public class DistanceCalculator {
 	private int x;

@@ -1,4 +1,4 @@
-package assessment;
+package assessment01;
 import java.util.Scanner;
 
 public class MetroBankLoanTester {
