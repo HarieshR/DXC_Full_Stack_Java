@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+
+body{
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    background-image:url(Images/bg2.jpeg);
+    background-size: 100%;
+}
+
+header{
+    background-color: #000033;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+}
+h1 {
+    line-height: 200%;
+    background-image: url(Images/Sunset.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 20px;
+    padding-right: 72px;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 5px #000033;
+
+}
+nav {
+    font-weight: bold;
+    /* padding: 5px; */
+    font-size: medium;
+    float: left;
+    width: 160px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+nav a { text-decoration: none;}
+nav a:link { color: #000033;}
+nav a:visited { color: #344873;}
+nav a:hover { color: #FFFFFF;}
+nav ul { list-style-type: none; margin: 0px; padding-left: 0px;}
+footer nav { text-align: left;}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, serif;
+    font-size: 2em;
+}
+
+h3{
+    color: #000033;
+}
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-left: 170px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+dt {
+
+    font-weight: bold;
+    color: #000033;
+}
+span.inn {
+    color: #000033;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#wrapper {
+    background-color: #90C7E3;
+    /* background-color: #90C7E3; */
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 300px;
+    max-width: 1024%;
+    box-shadow: 5px 5px 5px #000033;
+}
+
+#homehero {
+    height: auto;
+    width: auto;
+    padding-left: 170px;
+}
+#activitieshero {
+    height: auto;
+    width: auto;
+    padding-left: 170px;
+}
+#corporatehero {
+    height: auto;
+    width: auto;
+    padding-left: 170px;
+}
+#d{
+margin-left: -1.5%;
+text-align: left;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+    padding-left: 170px;
+}

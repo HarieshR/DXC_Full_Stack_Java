@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url(Images/bg2.jpeg);
+    background-size: 100%;
+}
+
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    line-height: 200%;
+    background-image: url(Images/Sunset.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 20px;
+    padding-right: 72px;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 5px #000033;
+
+}
+
+nav {
+    font-weight: bold;
+    font-size: medium;
+    float: left;
+    width: 200px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+footer nav {
+    text-align: left;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, serif;
+    font-size: 2em;
+}
+
+h3 {
+    color: #000033;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-left: 210px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+dt {
+
+    font-weight: bold;
+    color: #000033;
+}
+
+span.inn {
+    color: #000033;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#wrapper {
+    background-color: #90C7E3;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 300px;
+    max-width: 1024%;
+    box-shadow: 5px 5px 5px #000033;
+}
+
+#homehero {
+    height: auto;
+    width: auto;
+    padding-left: 210px;
+}
+
+#activitieshero {
+    height: auto;
+    width: auto;
+    padding-left: 210px;
+}
+
+#corporatehero {
+    height: auto;
+    width: auto;
+    padding-left: 210px;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+    padding-left: 210px;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-image: none;
+    }
+
+    #wrapper {
+        width: auto;
+        min-width: 0%;
+        box-shadow: none;
+        margin: 0%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding: 0.6em;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 1.5em;
+    }
+
+    main {
+        padding: 1em;
+        margin-left: 0;
+        font-size: 90%;
+    }
+    footer {
+        margin: 0%;
+        padding-left: 0%;
+    }
+
+    #homehero {
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #activitieshero {
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #corporatehero {
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+}
+
+@media only all and (max-width: 768px) {
+    
+    h1 {
+        height: 100%;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+
+    nav {
+        padding: 0em;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em;
+        border-bottom: 1px solid #330000 ;
+    }
+
+    nav ul {
+        margin: 0%;
+        padding: 0%;
+    }
+    nav li {
+        display: block;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    main {
+        padding-top: 0.1em;
+        padding-right: 0.6em;
+        padding-bottom: 0.1em;
+        padding-left: 0.4em;
+        margin-left: 0;
+        font-size: 90%;
+    }
+
+    footer {
+        margin: 0%;
+    }
+
+    #homehero {
+        display:none;
+    }
+
+    #activitieshero {
+        display: none;
+    }
+
+    #corporatehero {
+        display: none;
+    }
+
+    footer {
+        padding: 0%;
+    }
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+}
