@@ -1,0 +1,38 @@
+.container-style {
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 1px solid dodgerblue;
+    position: relative;
+    top: 180px;
+    border-radius: 4px;
+}
+
+.login-head-style {
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 0px 10px 10px;
+    margin: auto;
+}
+
+
+table,
+th,
+td {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: justify;
+    margin: 4%;
+    font-size: large;
+}

@@ -1,0 +1,63 @@
+<div *ngIf="!offerRide">
+    <div class="container container-style">
+        <div>
+            <h5 class="login-head-style">Book a Ride</h5>
+        </div>
+        <p> Pool Carz is an online application which enable users to share rides with others.
+            You can either book a ride or offer a ride. Did we mention that this app is advertisement
+            free ? To add on top of that its free of cost ! So what are you waiting for ?
+            Check out the rides available and start Riding!!!
+        </p>
+
+        <table class="button">
+            <div class="text-center">
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-primary " (click)="toggleRideTable()">Show All Rides</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary " *ngIf="showRideTable" (click)="showRides(filter)"> To Office</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary " *ngIf="showRideTable"> From office</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary " *ngIf="showRideTable">Others</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+
+        <div *ngIf="showRideTable">
+            <br />
+            <p style="text-align: center">Please select a Ride!</p><br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Starting Point</th>
+                        <th>End point</th>
+                        <th>Seats Available</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ride of rides">
+                        <td>{{ ride.start }}</td>
+                        <td>{{ ride.end }}</td>
+                        <td>{{ ride.seat }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+
+        <div style="text-align:center">
+            <button type="submit" class="btn btn-primary" (click)="showOffer()">Offer a Ride!</button>
+        </div>
+        <br />
+    </div>
+</div>
+
+<div *ngIf="offerRide">
+    <app-offer-ride><a href="offer-ride/offer-ride.component.html"></a></app-offer-ride>
+</div>

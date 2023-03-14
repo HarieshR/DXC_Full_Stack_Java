@@ -1,0 +1,45 @@
+<div *ngIf="!submitted">
+<div class="card-header">
+    Login
+</div>
+<div class="card text-center container container-styles">
+    <div class="card-body">
+    <form>
+        <div class="form-group">
+            <tr>
+                <th>
+                    <label for="email">UserName</label>
+                </th>
+                <th>
+                    <input type="text" #user class="form-control" id="user" placeholder="Enter User Name">
+                </th>
+            </tr>
+        </div>
+        <div class="form-group">
+            <tr>
+                <th>
+                    <label for="password">Password&nbsp;</label>
+                </th>
+                <th>
+                <input type="password" #password class="form-control" id="password" placeholder="Password"> 
+                </th>
+            </tr>
+        </div>
+        <br />
+    </form>
+    <button (click)="onSubmit(user.value, password.value)">Login</button>
+    </div>
+    <!-- <div class="card-footer text muted"></div> -->
+</div>
+</div>
+
+<div *ngIf="submitted">
+    <div *ngIf="isAuthenticated; else failureMsg">
+        <h4>Welcome {{ userName }}</h4>
+        <app-book-ride><a href="book-ride/book-ride.component.html"></a></app-book-ride>
+    </div>
+    <ng-template #failureMsg>
+        <h4>Invalid Login !!! Please try again...</h4>
+    </ng-template>
+    <!-- <button type="button" (click)="submitted = false">Back</button> -->
+</div>
